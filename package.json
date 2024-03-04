@@ -1,9 +1,37 @@
 {
-  "name": "request-image-size",
-  "version": "2.2.0",
-  "description": "Detect image dimensions via request.",
-  "author": "Rodrigo Fernández Romero",
+  "name": "fetch-image-size",
+  "version": "3.0.0",
+  "main": "dist/fetch-image-size.js",
+  "module": "dist/fetch-image-size.mjs",
+  "types": "dist/fetch-image-size.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/fetch-image-size.mjs",
+      "require": "./dist/fetch-image-size.js",
+      "types": {
+        "import": "./dist/fetch-image-size.d.mts",
+        "require": "./dist/fetch-image-size.d.ts"
+      }
+    }
+  },
   "license": "MIT",
+  "description": "Detect image dimensions via fetch",
+  "author": "Alec Larson",
+  "contributors": [
+    "Rodrigo Fernández Romero"
+  ],
+  "dependencies": {
+    "image-size": "^1.1.1"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.2"
+  },
+  "scripts": {
+    "dev": "tsup --watch",
+    "build": "tsup",
+    "prepare": "npm run build"
+  },
+  "repository": "aleclarson/fetch-image-size",
   "keywords": [
     "image",
     "size",
@@ -11,12 +39,7 @@
     "resolution",
     "width",
     "height",
-    "request",
-    "http",
-    "https",
-    "promise",
-    "detect",
-    "probe",
+    "bun",
     "png",
     "jpeg",
     "bmp",
@@ -25,27 +48,14 @@
     "tiff",
     "webp",
     "svg",
-    "ico",
-    "cur"
+    "fetch",
+    "request",
+    "http",
+    "https",
+    "detect",
+    "probe"
   ],
-  "homepage": "https://github.com/FdezRomero/request-image-size",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/FdezRomero/request-image-size.git"
-  },
-  "bugs": {
-    "url": "https://github.com/FdezRomero/request-image-size/issues"
-  },
-  "main": "index.js",
-  "scripts": {
-    "lint": "eslint ./"
-  },
-  "dependencies": {
-    "image-size": "^0.9.3",
-    "request": "^2.88.2",
-    "standard-http-error": "^2.0.1"
-  },
-  "devDependencies": {
-    "eslint-config-savelist": "^1.2.3"
-  }
+  "files": [
+    "dist"
+  ]
 }
