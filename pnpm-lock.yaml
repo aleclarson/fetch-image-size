@@ -8,6 +8,9 @@ dependencies:
   image-size:
     specifier: ^1.1.1
     version: 1.1.1
+  undici-types:
+    specifier: ^6.7.1
+    version: 6.7.1
 
 devDependencies:
   '@alloc/prettier-config':
@@ -22,9 +25,6 @@ devDependencies:
   typescript:
     specifier: ^5.4.2
     version: 5.4.2
-  undici-types:
-    specifier: ^6.7.1
-    version: 6.7.1
 
 packages:
 
@@ -1130,7 +1130,7 @@ packages:
 
   /undici-types@6.7.1:
     resolution: {integrity: sha512-7r+rI8EcAjs3Th8JYhJUW4K6cNne8aPoQ7f44Y8zZIkLEcn7UkKvbQpFgBu/fbn2YY7k44pn1e7PnTY/vzBnVQ==}
-    dev: true
+    dev: false
 
   /webidl-conversions@4.0.2:
     resolution: {integrity: sha512-YQ+BmxuTgd6UXZW3+ICGfyqRyHXVlD5GtQr5+qjiNW7bF0cqrzX500HVXPBOvgXb5YnzDd+h0zqyv61KUD7+Sg==}
