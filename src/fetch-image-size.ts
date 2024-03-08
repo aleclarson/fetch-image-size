@@ -1,5 +1,13 @@
 import { imageSize } from 'image-size'
 
+type RequestInit = import('undici-types').RequestInit & {
+  signal?: import('./globals').AbortSignal
+}
+
+declare const AbortController: typeof import('./globals').AbortController
+declare const fetch: typeof import('./globals').fetch
+declare const setTimeout: typeof import('./globals').setTimeout
+
 export declare namespace fetchImageSize {
   interface Options extends RequestInit {
     maxBytes?: number

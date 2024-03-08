@@ -20,11 +20,16 @@
   "contributors": [
     "Rodrigo Fernández Romero"
   ],
+  "prettier": "@alloc/prettier-config",
   "dependencies": {
     "image-size": "^1.1.1"
   },
   "devDependencies": {
-    "tsup": "^8.0.2"
+    "@alloc/prettier-config": "^1.0.0",
+    "prettier": "^3.2.5",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.2",
+    "undici-types": "^6.7.1"
   },
   "scripts": {
     "dev": "tsup --watch",
