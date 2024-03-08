@@ -1,7 +1,5 @@
 # fetch-image-size
 
-[![NPM](https://nodei.co/npm/request-image-size.png)](https://nodei.co/npm/request-image-size/)
-
 Detects image dimensions without downloading the entire image. Requests are aborted as soon as [image-size](https://github.com/image-size/image-size) is able to obtain the image size.
 
 Supports all the image formats supported by [image-size](https://github.com/image-size/image-size):
