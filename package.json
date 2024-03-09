@@ -1,6 +1,6 @@
 {
   "name": "fetch-image-size",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "main": "dist/fetch-image-size.js",
   "module": "dist/fetch-image-size.mjs",
   "types": "dist/fetch-image-size.d.ts",
